@@ -10,7 +10,7 @@ function Row({ title, getData }) {
     async function fetchData() {
       const request = await api.get(getData);
       setMovies(request.data.results);
-      console.log(request.data.results)
+      console.log(request.data.results);
       return request;
     }
     fetchData();
@@ -22,7 +22,11 @@ function Row({ title, getData }) {
 
       <div className="movie-image">
         {movies.map((movie) => (
-          <img src={`${image}${movie.poster_path}`} key={movie.id} alt={movie.title} />
+          <img
+            src={`${image}${movie.poster_path}`}
+            key={movie.id}
+            alt={movie.title}
+          />
         ))}
       </div>
     </div>
