@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import api from "../../utils/api";
 import ScrollContainer from "react-indiana-drag-scroll";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
 import "./row.css";
 
 const image = "https://image.tmdb.org/t/p/w500/";
 
 function Row({ title, getData, isLargeRow }) {
+  const history = useHistory();
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
@@ -24,13 +25,13 @@ function Row({ title, getData, isLargeRow }) {
       <h2>{title}</h2>
       <ScrollContainer className="row-posters">
         {movies.map((movie) => (
-          // <Link
-          //   to={{
-          //     pathname: `/browse/${movie.id}`,
-          //     state: {movie}
-          //   }}
-          // >
           <img
+            onClick={() => {
+              history.push({
+                pathname: `/browse/${movie.id}`,
+                state: { movie },
+              });
+            }}
             key={movie.id}
             className={`row-poster ${isLargeRow && "row-posterLarge"}`}
             src={`${image}${
@@ -38,7 +39,6 @@ function Row({ title, getData, isLargeRow }) {
             }`}
             alt={movie.title}
           />
-           // <Link />
         ))}
       </ScrollContainer>
     </div>
