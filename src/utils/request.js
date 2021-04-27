@@ -1,4 +1,4 @@
-const KEY = process.env.REACT_APP_KEY;
+import { KEY } from "./secret"
 
 const requests = {
   getPopularMovie: `movie/popular?api_key=${KEY}&language=en-US&page=1`,

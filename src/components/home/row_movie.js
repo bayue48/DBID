@@ -1,10 +1,9 @@
 import React, { useState, useEffect } from "react";
 import api from "../../utils/api";
+import { image } from "../../utils/secret"
 import ScrollContainer from "react-indiana-drag-scroll";
 import { useHistory } from "react-router-dom";
 import "./row.css";
-
-const image = "https://image.tmdb.org/t/p/w500/";
 
 function Row({ title, getData, isLargeRow }) {
   const history = useHistory();
@@ -37,7 +36,7 @@ function Row({ title, getData, isLargeRow }) {
             src={`${image}${
               isLargeRow ? movie.poster_path : movie.backdrop_path
             }`}
-            alt={movie.title}
+            alt={movie?.title || movie?.name || movie?.original_name}
           />
         ))}
       </ScrollContainer>

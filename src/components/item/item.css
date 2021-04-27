@@ -1,0 +1,28 @@
+.banner {
+  padding-top: 50px;
+  background: rgba(37, 37, 37, 0.61);
+}
+
+.name {
+  color: #f4f4f4;
+}
+
+.banner-button {
+  cursor: pointer;
+  color: #f4f4f4;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  border-radius: 0.2vw;
+  padding: 1rem;
+  margin-right: 1rem;
+  padding-top: 0.5rem;
+  background-color: rgba(51, 51, 51, 0.5);
+  padding-bottom: 0.5rem;
+}
+
+.banner-button:hover {
+  color: #393534;
+  background-color: #f4f4f4;
+  transition: all 0.2s;
+}

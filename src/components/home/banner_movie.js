@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
 import api from "../../utils/api";
 import requests from "../../utils/request";
+import { useHistory } from "react-router-dom";
 import "./banner.css";
 
 function Banner() {
+  const history = useHistory();
   const [movie, setMovie] = useState([]);
 
   useEffect(() => {
@@ -36,13 +38,24 @@ function Banner() {
 
         <div className="banner-buttons">
           <button className="banner-button">Play</button>
-          <button className="banner-button">MyList</button>
+          <button
+            onClick={() => {
+              history.push({
+                pathname: `/browse/${movie.id}`,
+                state: { movie },
+              });
+            }}
+            className="banner-button"
+          >
+            Detail
+          </button>
 
           <h1 className="banner-description">
             {truncate(movie?.overview, 150)}
           </h1>
         </div>
       </div>
+      <div className="banner-fadebottom" />
     </header>
   );
 }

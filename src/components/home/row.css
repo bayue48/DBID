@@ -1,14 +1,10 @@
 .row {
-  color: #f4f4f4;
-  margin-left: 20px;
+  padding: 10px;
+  color: #22211F;
 }
+
 .row-posters {
   display: flex;
-  overflow-y: hidden;
-  overflow-x: scroll;
-}
-.row-posters::-webkit-scrollbar {
-  display: none;
 }
 
 .row-poster {

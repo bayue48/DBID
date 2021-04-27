@@ -4,6 +4,7 @@ import Router from "./pages/router";
 import "./index.css";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css"
+import 'react-modal-video/scss/modal-video.scss';
 
 ReactDOM.render(
     <React.StrictMode>

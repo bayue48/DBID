@@ -1,8 +1,10 @@
 .footer-head-text {
   font-size: xx-large;
+  color: #F4F4F4;
 }
 .footer-subhead-text {
   font-size: x-large;
+  color: #F4F4F4;
 }
 .footer-text {
   font-size: large;
@@ -11,8 +13,8 @@
   font-weight: bold;
 }
 .foot {
-  height: 40vh;
-  background-color: #f4f4f4;
+  height: 37vh;
+  background-color: #22211F;
 }
 
 @media screen and (max-width: 767px) {

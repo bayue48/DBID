@@ -1,5 +1,5 @@
 .banner {
-  color: white;
+  color: #f4f4f4;
   object-fit: contain;
   height: 448px;
 }
@@ -27,13 +27,12 @@
 
 .banner-button {
   cursor: pointer;
-  color: #fff;
+  color: #f4f4f4;
   outline: none;
   border: none;
   font-weight: 700;
   border-radius: 0.2vw;
-  padding-left: 2rem;
-  padding-right: 1rem;
+  padding: 1rem;
   margin-right: 1rem;
   padding-top: 0.5rem;
   background-color: rgba(51, 51, 51, 0.5);
@@ -41,7 +40,17 @@
 }
 
 .banner-button:hover {
-  color: #000;
-  background-color: #e6e6e6;
+  color: #393534;
+  background-color: #f4f4f4;
   transition: all 0.2s;
+}
+
+.banner-fadebottom {
+  height: 16.5rem;
+  background-image: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.61),
+    #111
+  );
 }

@@ -1,6 +1,24 @@
-.nav-text {
-    font-size: large;
-    height: 60px;
-    color: #FF7314;
-    font-weight: bold;
-  }
+.nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  height: 60px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+
+  transition-timing-function: ease-in;
+  transition: all 0.5s;
+}
+
+.nav-black {
+  background-color: #22211F;
+}
+
+.nav-logo {
+  position: fixed;
+  left: 20px;
+  width: 80px;
+  object-fit: contain;
+}

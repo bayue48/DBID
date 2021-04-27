@@ -1,6 +1,5 @@
 import axios from "axios";
-
-const URL = process.env.REACT_APP_API;
+import { URL } from "./secret"
 
 export default axios.create({
   baseURL: `${URL}`,
