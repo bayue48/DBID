@@ -11,3 +11,15 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  margin: 0;
+}
+
+.app {
+  background-color: #F4F4F4;
+}
+
+h2 {
+  color: #22211F;
+}
