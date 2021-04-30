@@ -1,7 +1,7 @@
 # DBID
 
 <div align="center">
-    <img width="25%" src="./public/logo.png">
+    <img width="25%" src="./public/icon.png">
 </div>
 
 ## Contents
