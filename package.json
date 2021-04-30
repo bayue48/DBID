@@ -11,7 +11,6 @@
     "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
     "dotenv": "^8.2.0",
-    "formik": "^2.2.6",
     "framer-motion": "^4.1.6",
     "movie-trailer": "^2.1.0",
     "node-sass": "^5.0.0",

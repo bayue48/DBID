@@ -1,70 +1,78 @@
-# Getting Started with Create React App
+# DBID
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<div align="center">
+    <img width="25%" src="./public/logo.png">
+</div>
 
-## Available Scripts
+## Contents
 
-In the project directory, you can run:
+- [Description](#description)
+- [Screenshoots](#screenshoots)
+- [Requirements](#requirements)
+- [Installation](#installation)
+- [ENV](#ENV)
+- [Usage](#Usage)
+- [Credit](#Credit)
+- [License](#license)
 
-### `npm start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+**DBID** is a web all about movie.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Screenshoots
 
-### `npm test`
+<div align="center">
+    <img width="100%" src="./public/screencapture-localhost-3000-2021-04-30-11_45_05.png">
+    <img width="100%" src="./public/screencapture-localhost-3000-browse-27205-2021-04-30-11_46_44.png">
+    <img width="100%" src="./public/screencapture-localhost-3000-signup-2021-04-30-11_48_17.png">
+</div>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Requirements
 
-### `npm run build`
+- [`Node Js`](https://nodejs.org/en/)
+- [`npm`](https://www.npmjs.com/get-npm)
+- [`ReactJs`](https://reactjs.org/)
+- [`TMDB API`](https://developers.themoviedb.org/3)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repo
+   ```sh
+   git clone https://github.com/bayue48/DBID.git
+   ```
+2. Install NPM packages
+   ```sh
+   npm install
+   ```
+   This will install the dependencies inside `node_modules`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### ENV
 
-### `npm run eject`
+Please create and make the changes in the .env file.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+REACT_APP_API = "https://api.themoviedb.org/3/"
+REACT_APP_KEY = "Your TMDB API KEY"
+```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Usage
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Runs the app in the development mode.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+`npm start`.
 
-## Learn More
+Then open [http://localhost:3000/](http://localhost:3000/) to view it in the browser.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you want to build, type `npm run build`.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Credit
 
-### Code Splitting
+- [`TMDB API`](https://developers.themoviedb.org/3)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+<div align="center">
+    <img width="100%" src="https://www.themoviedb.org/assets/2/v4/logos/v2/blue_long_2-9665a76b1ae401a510ec1e0ca40ddcb3b0cfe45f1d51b77a308fea0845885648.svg"/>
+</div>
 
-### Analyzing the Bundle Size
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Distributed under the [MIT](https://github.com/bayue48/DBID/blob/main/LICENSE) License.

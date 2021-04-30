@@ -3,7 +3,7 @@
   top: 0;
   width: 100%;
   padding: 20px;
-  height: 60px;
+  height: 80px;
   z-index: 1;
   display: flex;
   justify-content: space-between;
@@ -13,12 +13,16 @@
 }
 
 .nav-black {
-  background-color: #22211F;
+  background-color: #22211f;
 }
 
 .nav-logo {
   position: fixed;
   left: 20px;
-  width: 80px;
-  object-fit: contain;
+  width: 140px;
+}
+
+.button-navbar {
+  position: fixed;
+  right: 20px;
 }

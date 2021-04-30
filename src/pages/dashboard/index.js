@@ -17,11 +17,9 @@ function App() {
           getData={requests.getPopularMovie}
           isLargeRow
         />
-        <Row title="Popular Series" getData={requests.getPopularTv} />
         <Row title="Top Rated Movie" getData={requests.getTopRatedMovie} />
-        <Row title="Top Rated Series" getData={requests.getTopRatedTv} />
         <Row title="Trending Movie" getData={requests.getTrendingMovieDay} />
-        <Row title="Trending Series" getData={requests.getTrendingTvDay} />
+        <Row title="Best Movie" getData={requests.getNewMovie} />
       </Container>
       <Footer />
     </div>

@@ -1,0 +1,43 @@
+.full-h {
+  min-height: 100vh;
+}
+.bg-mask {
+  background: rgba(37, 37, 37, 0.61);
+}
+.mask {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+}
+.main-color {
+  color: #ff7314;
+}
+.blur-color {
+  color: #f4f4f4;
+}
+.btn-main {
+  border-radius: 6px;
+  background-color: #ff7314;
+  color: #f4f4f4;
+}
+.btn-main:hover {
+  color: #f4f4f4;
+}
+.clicked:hover {
+  cursor: pointer;
+  color: #ff7314;
+}
+.input-auth {
+  background-color: #f4f4f4 !important;
+  box-sizing: border-box;
+  border-radius: 6px;
+}
+.input-auth:hover,
+.input-auth:focus {
+  box-shadow: 0px 4px 10px 3px rgba(0, 0, 0, 0.11) !important;
+  border: 1px solid #ff7314 !important;
+}
+.font-weight-medium {
+  font-weight: 500;
+}

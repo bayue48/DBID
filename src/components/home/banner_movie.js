@@ -3,14 +3,18 @@ import api from "../../utils/api";
 import requests from "../../utils/request";
 import { useHistory } from "react-router-dom";
 import "./banner.css";
+import ModalVideo from "react-modal-video";
+import movieTrailer from "movie-trailer";
 
 function Banner() {
   const history = useHistory();
   const [movie, setMovie] = useState([]);
+  const [trailerUrl, setTrailerUrl] = useState("");
+  const [isOpen, setOpen] = useState(false);
 
   useEffect(() => {
     async function fetchData() {
-      const request = await api.get(requests.getTopRatedMovie);
+      const request = await api.get(requests.getNewMovie);
       setMovie(
         request.data.results[
           Math.floor(Math.random() * request.data.results.length - 1)
@@ -23,6 +27,20 @@ function Banner() {
   function truncate(str, n) {
     return str?.length > n ? str.substr(0, n - 1) + "..." : str;
   }
+
+  const handleClick = (movie) => {
+    if (trailerUrl) {
+      setTrailerUrl("");
+    } else {
+      movieTrailer(movie?.title || movie?.name || movie?.original_name)
+        .then((url) => {
+          const urlParams = new URLSearchParams(new URL(url).search);
+          setTrailerUrl(urlParams.get("v"));
+        })
+        .catch((error) => console.log(error));
+      setOpen(true);
+    }
+  };
 
   return (
     <header
@@ -37,7 +55,9 @@ function Banner() {
         <h1 className="banner-title">{movie?.title}</h1>
 
         <div className="banner-buttons">
-          <button className="banner-button">Play</button>
+          <button className="banner-button" onClick={() => handleClick(movie)}>
+            Trailer
+          </button>
           <button
             onClick={() => {
               history.push({
@@ -55,6 +75,16 @@ function Banner() {
           </h1>
         </div>
       </div>
+      {trailerUrl && (
+        <ModalVideo
+          channel="youtube"
+          autoplay
+          youtube={{ mute: 1, autoplay: 1 }}
+          isOpen={isOpen}
+          videoId={trailerUrl}
+          onClose={() => setOpen(false)}
+        />
+      )}
       <div className="banner-fadebottom" />
     </header>
   );

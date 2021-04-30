@@ -13,7 +13,6 @@ function Row({ title, getData, isLargeRow }) {
     async function fetchData() {
       const request = await api.get(getData);
       setMovies(request.data.results);
-      console.log(request.data.results);
       return request;
     }
     fetchData();
