@@ -23,6 +23,7 @@
 
 <div align="center">
     <img width="100%" src="./public/screencapture-localhost-3000-2021-04-30-11_45_05.png">
+    <img width="100%" src="./public/Screenshot_44.png">
     <img width="100%" src="./public/screencapture-localhost-3000-browse-27205-2021-04-30-11_46_44.png">
     <img width="100%" src="./public/screencapture-localhost-3000-signup-2021-04-30-11_48_17.png">
 </div>
