@@ -56,15 +56,17 @@ export default class Step3 extends Component {
               <Col>
                 {this.state.jobs.map((values) => {
                   return (
+                    <Row>
                     <Form.Control
                       key={values.value}
                       placeholder={values.value}
                       className="pt-4 pb-4 pl-4 pr-0 input-auth"
                       readOnly
                     />
+                    </Row>
                   );
                 })}
-              </Col>
+                </Col>
             </Row>
             <Row>
               <Col>

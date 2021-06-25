@@ -1,6 +1,7 @@
 import { Button } from "react-bootstrap";
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router-dom";
+import { logo } from "../../assets";
 import "./navbar.css";
 
 function Nav() {
@@ -24,7 +25,8 @@ function Nav() {
           history.push("/");
         }}
         className="nav-logo"
-        src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/170px-Netflix_2015_logo.svg.png"
+        // 
+        src={logo}
         alt="Netflix Logo"
       />
       <Button className="button-navbar" variant="danger" onClick={() => {
