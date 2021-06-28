@@ -12,6 +12,7 @@
 - [Installation](#installation)
 - [ENV](#ENV)
 - [Usage](#Usage)
+- [Demo](#Demo)
 - [Credit](#Credit)
 - [License](#license)
 
@@ -65,6 +66,10 @@ Runs the app in the development mode.
 Then open [http://localhost:3000/](http://localhost:3000/) to view it in the browser.
 
 If you want to build, type `npm run build`.
+
+# Demo
+
+DBID build version, klik [here](https://dbid-b6d10.web.app/).
 
 ## Credit
 
