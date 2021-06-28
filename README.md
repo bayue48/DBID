@@ -69,7 +69,7 @@ If you want to build, type `npm run build`.
 
 # Demo
 
-DBID build version, klik [here](https://dbid-b6d10.web.app/).
+DBID build version, click [here](https://dbid-b6d10.web.app/).
 
 ## Credit
 
